@@ -1,0 +1,26 @@
+#menu {
+  visibility: hidden;
+}
+
+#introduction {
+  text-align: center;
+  color: #66f;
+  font-family: sans-serif;
+}
+
+.section p::first-letter, .introduction p::first-letter {
+  /*color: black;*/
+  padding-left: 25px;
+  font-size: 25px;
+}
+
+#history, #interface {
+  color: #66f;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+#conclusion {
+  border-top: 1px solid #ccc;
+  text-align: right;
+}

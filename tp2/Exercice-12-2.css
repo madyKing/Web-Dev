@@ -1,0 +1,50 @@
+/* navigation bar*/
+li {
+  display: inline;
+}
+
+ul {
+  background-color: #fa0;
+  list-style-type: square;
+  margin: 0;
+  padding: 0;
+}
+
+/*a {
+  display: block;
+  padding: 8px;
+}*/
+
+#introduction {
+  border-width: 1px;
+  border-style: solid;
+  background-color: #fa0;
+  float: left;
+}
+.introduction h1 {
+  font-variant: small-caps;
+}
+.introduction h1::after{
+  padding-top: 25px;
+  font-size: 15px;
+  content: "From Wikipedia, the free encyclopedia";
+  font-style: normal;
+}
+
+.introduction p {
+  text-align: right;
+  font-style: italic;
+  padding-left: 20px;
+}
+
+body{
+  counter-reset: section;
+}
+h2::before{
+  counter-increment: section;
+  content: counter(section)".";
+}
+h2 {
+  text-decoration: underline;
+  text-indent: 15px;
+}
